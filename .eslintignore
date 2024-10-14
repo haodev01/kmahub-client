@@ -1,0 +1,9 @@
+node_modules/
+dist/
+public/
+coverage/
+docs/
+*.config.js
+components/ui
+lib/utils.tst
+tailwind.config.ts
