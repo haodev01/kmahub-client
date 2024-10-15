@@ -1,22 +1,16 @@
 import { listMenu } from '@/configs';
-import Link from 'next/link';
 import React from 'react';
+import { SidebarItem } from './sidebar-item';
 
 export const Sidebar = () => {
   return (
-    <div className=" sticky top-20 left-0 w-25 px-4">
-      <div>
+    <div className="md:sticky fixed bottom-0 w-full md:top-20 md:left-0 md:w-25 md:px-4">
+      <div className="flex items-center justify-center md:flex-col md:gap-x-0 gap-x-6">
         {listMenu.map((item) => (
-          <Link
-            key={item.path}
-            href={item.path}
-            className="flex hover:text-primary flex-col items-center bg-stone-200 p-4 rounded-md cursor-pointer mb-2"
-          >
-            {item.icon}
-            <span className="text-xs font-medium">{item.label}</span>
-          </Link>
+          <SidebarItem item={item} key={item.path} />
         ))}
       </div>
     </div>
   );
 };
+//
