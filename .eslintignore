@@ -4,6 +4,6 @@ public/
 coverage/
 docs/
 *.config.js
-components/ui
+src/components/ui
 lib/utils.tst
 tailwind.config.ts
