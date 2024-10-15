@@ -1,9 +1,9 @@
 import { Blog } from '@/types';
-import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import AppText from '../app-text';
+import { ImageBlur } from '../images';
 
 type Props = {
   blog: Blog;
@@ -13,14 +13,14 @@ export const BlogItem = (props: Props) => {
   const { blog } = props;
   return (
     <Link
-      href="/"
+      href="/blog/lam-quen-voi-unbutu"
       className="block bg-card border rounded-lg group dark:border-stone-500"
     >
       <div>
-        <Image
+        <ImageBlur
           src={blog.thumb}
           alt={blog.title}
-          width={500}
+          width={800}
           height={200}
           className="rounded-t-lg"
         />

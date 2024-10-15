@@ -5,7 +5,7 @@ import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@/components/provider/theme-prodvider';
 
 const roboto = Roboto({
-  weight: ['400', '700'],
+  weight: ['400', '500', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',

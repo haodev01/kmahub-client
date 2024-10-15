@@ -14,7 +14,7 @@ const user = {
 export const Header = () => {
   return (
     <div className="h-[60px] border-b dark:border-stone-500 fixed top-0 left-0 right-0 bg-white dark:bg-black">
-      <div className="px-5 flex items-center h-full justify-between">
+      <div className="md:px-10 px-4 flex items-center h-full justify-between">
         <Link href="/">
           <Image
             priority

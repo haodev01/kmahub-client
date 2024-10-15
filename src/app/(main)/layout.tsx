@@ -14,7 +14,7 @@ export default function MainLayout({
           <div className="shrink-0">
             <Sidebar />
           </div>
-          <div className="p-4">{children}</div>
+          <div className="p-4 w-full pb-[100px]">{children}</div>
         </div>
       </div>
     </div>

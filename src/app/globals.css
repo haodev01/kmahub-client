@@ -97,3 +97,19 @@ body {
   word-break: break-word;
   white-space: normal;
 }
+.t-ellipsis-4 {
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important;
+  word-break: break-word;
+  white-space: normal;
+}
+.blog-content {
+  margin-top: 30px;
+}
+.blog-content img {
+  margin: 20px 0;
+  border-radius: 4px;
+}
