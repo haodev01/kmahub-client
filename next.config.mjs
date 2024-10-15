@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: 'github.com',
       },
+      {
+        hostname: 'files.fullstack.edu.vn',
+      },
     ],
   },
 };
