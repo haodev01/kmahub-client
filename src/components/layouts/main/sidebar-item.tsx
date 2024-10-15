@@ -20,7 +20,7 @@ export const SidebarItem = (props: Props) => {
     <Link
       href={item.path}
       className={clsx(
-        'flex hover:text-primary flex-col  items-center hover:bg-primary/10  p-4 rounded-md cursor-pointer mb-2',
+        'flex hover:text-primary flex-col  items-center hover:bg-primary/10  md:p-4 p-2 rounded-md cursor-pointer md:mb-2',
         {
           'bg-primary/10  text-primary': isActive(item.path),
         },

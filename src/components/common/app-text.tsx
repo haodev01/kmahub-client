@@ -9,12 +9,12 @@ type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 const TextVariants = cva('', {
   variants: {
     variant: {
-      h1: 'font-bold',
-      h2: 'font-bold',
+      h1: 'font-bold text-slate-800 dark:text-slate-50',
+      h2: 'font-bold  text-slate-800 dark:text-slate-50',
       h3: 'font-medium',
       h4: 'font-medium',
       p: 'text-slate-500 dark:text-slate-400',
-      span: '',
+      span: 'text-slate-500 dark:text-slate-400',
     },
     size: {
       default: 'text-md',
