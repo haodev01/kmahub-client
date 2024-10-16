@@ -4,6 +4,9 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { dataBlog } from '@/configs';
 import { Bookmark } from 'lucide-react';
 
+export function generateStaticParams() {
+  return [{ slug: 'lam-quen-voi-unbutu' }];
+}
 export default function BlogDetail() {
   return (
     <div className="w-full grid grid-cols-4 gap-x-8 max-w-[1024px] mx-auto">
