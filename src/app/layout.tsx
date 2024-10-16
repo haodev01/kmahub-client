@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@/components/provider/theme-prodvider';
+import { cookies } from 'next/headers';
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -21,6 +22,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = cookies();
+  console.log(cookieStore);
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={roboto.className}>
